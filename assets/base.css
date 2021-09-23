@@ -139,6 +139,7 @@ a {
 }
 
 .header-right {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -225,6 +226,7 @@ a {
 
 .ending-right {
     display: flex;
+    font-weight: 700;
 }
 
 .ending-right span {
@@ -266,7 +268,8 @@ a {
     list-style: none;
     position: absolute;
     right: 152px;
-    top: 70px;
+    top: 128px;
+    color: var(--black-color);
     background-color: var(--white-color);
     font-size: 1.6rem;
     width: 240px;
@@ -276,6 +279,7 @@ a {
 }
 
 .close-modal {
+    display: none;
     position: absolute;
     content: "";
     width: 78px;
@@ -346,4 +350,85 @@ a {
 
 .grid__6-rows {
     grid-template-columns: repeat(6 , 1fr);
+}
+
+/* Responsive */
+
+@media (max-width: 1110px) {
+    .header,
+    .footer,
+    .content__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__nav-item {
+        position: relative;
+    }
+
+    .footer__nav-item ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px -12px;
+        padding-bottom: 12px;
+    }
+
+    .footer__nav-item::after {
+        position: absolute;
+        content: "";
+        bottom: 4px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--button-border);
+    }
+
+    .footer__nav-item ul li {
+        width: 33.33%;
+        padding: 0 12px;
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 932px) {
+
+}
+
+@media (max-width: 726px) {
+
+    .header,
+    .footer,
+    .content__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr!important;
+    }
+
+    .footer__nav-item ul li {
+        width: 100%;
+    }
+
+    .footer_ending {
+        flex-direction: column-reverse;
+    }
+
+    .ending-right {
+        margin-bottom: 8px;
+    }
+
+    .footer__social {
+        display: none;
+    }
+
+    .ending-left span:first-child {
+        display: block;
+        margin-bottom: 8px;
+    }
 }

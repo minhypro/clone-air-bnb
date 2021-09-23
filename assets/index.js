@@ -20,9 +20,11 @@ window.addEventListener('scroll', () => {
     }
     else {
         header.style.visibility = "visible";
-        accountMenu.style.top = "";
+        accountMenu.style.top = "70px";
         closeModal.style.top = "20px";
     }
+
+    console.log(window.innerWidth);
 })
 
 headerAccounts.forEach(headerAccount => {
@@ -40,3 +42,12 @@ window.onclick = function(event) {
 closeModal.onclick = () => {
     modal.style.display = "none";
 }
+
+// let innerWidth = window.innerWidth;
+//     if (innerWidth <= 1768) {
+//         accountMenu.style.right = '80px';
+//     }
+
+//     else {
+//         accountMenu.style.right = `${innerWidth-1768}px`;
+//     }

@@ -1,12 +1,5 @@
 @media (max-width: 1110px) {
 
-    .header,
-    .footer,
-    .content__container {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .anywhere__container,
     .near-here__container {
         grid-template-columns: repeat(3 , 1fr);
@@ -21,42 +14,18 @@
         display: none;
     }
 
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__nav-item {
-        position: relative;
-    }
-
-    .footer__nav-item ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 8px -12px;
-        padding-bottom: 12px;
-    }
-
-    .footer__nav-item::after {
-        position: absolute;
-        content: "";
-        bottom: 4px;
-        width: 100%;
-        height: 1px;
-        background-color: var(--button-border);
-    }
-
-    .footer__nav-item ul li {
-        width: 33.33%;
-        padding: 0 12px;
-        margin: 8px 0;
-    }
-
 }
 
 @media (max-width: 932px) {
     .poster__header__center {
-        display: none;
+        position: absolute;
+        top: 80px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .poster__search {
+        top: 200px
     }
 
     .display-normal {
@@ -65,5 +34,75 @@
 
     .display-mobile {
         display: block;
+    }
+
+    .poster__search__item:first-child {
+        flex: 1;
+    }
+
+    .poster__search__item:last-child {
+        flex: 1.4;
+    }
+
+    .header__logo {
+        width: 54px;
+        flex: none;
+    }
+
+    .poster img {
+        height: 700px;
+    }
+}
+
+@media (max-width: 726px) {
+    .covid-notify {
+        background-color: var(--white-color);
+        height: unset;
+    }
+
+    .covid-notify a {
+        color: var(--black-color);
+        padding: 16px 20px;
+        display: block;
+        line-height: normal;
+    }
+
+    .poster__flex-search {
+        bottom: 250px;
+    }
+
+    .poster__search,
+    .header {
+        display: none!important;
+        
+    }
+
+    .poster__search--mobile {
+        display: flex;
+    }
+
+    .poster img {
+        height: 600px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr!important;
+    }
+
+   
+
+    .content h2 {
+        font-size: 4rem;
+    }
+
+    .anywhere__item b,
+    .experiences__item b {
+        font-size: 3.2rem;
+    }
+
+    .near-here__item p,
+    .near-here__item b,
+    .experiences__item p {
+        font-size: 2rem;
     }
 }
