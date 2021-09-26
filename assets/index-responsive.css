@@ -19,13 +19,13 @@
 @media (max-width: 932px) {
     .poster__header__center {
         position: absolute;
-        top: 80px;
+        top: 8rem;
         justify-content: center;
         width: 100%;
     }
 
     .poster__search {
-        top: 200px
+        top: 20rem
     }
 
     .display-normal {
@@ -45,30 +45,30 @@
     }
 
     .header__logo {
-        width: 54px;
+        width: 5.4rem;
         flex: none;
     }
 
     .poster img {
-        height: 700px;
+        height: 70rem;
     }
 }
 
 @media (max-width: 726px) {
     .covid-notify {
         background-color: var(--white-color);
-        height: unset;
+        /* height: unset; */
     }
 
     .covid-notify a {
         color: var(--black-color);
-        padding: 16px 20px;
+        padding: 1.6rem 2rem;
         display: block;
         line-height: normal;
     }
 
     .poster__flex-search {
-        bottom: 250px;
+        bottom: 25rem;
     }
 
     .poster__search,
@@ -82,7 +82,7 @@
     }
 
     .poster img {
-        height: 600px;
+        height: 60rem;
     }
 
     .grid {

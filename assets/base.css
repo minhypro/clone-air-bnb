@@ -35,15 +35,19 @@ body {
     font-weight: 600!important;
 }
 
+.weight-700 {
+    font-weight: 700!important;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 .rounded {
-    padding: 12px 16px;
-    height: 40px;
-    border-radius: 22px;
+    padding: 1.2rem 1.6rem;
+    height: 4.0rem;
+    border-radius: 2.2rem;
 }
 
 .rounded:hover {
@@ -52,64 +56,72 @@ a {
 
 .btn {
     background-color: var(--white-color);
-    border-radius: 8px;
+    border-radius: .8rem;
     color: #222;
-    padding: 16px;
+    padding: 1.6rem;
     font-weight: 600;
 }
 
 .display-mobile {
-    display: none;
+    display: none!important;
+}
+
+.logo--mini {
+    color: #ff385c;
+}
+
+img {
+    width: 100%;
 }
 
 /* Header */
 .header {
     display: flex;
     position: relative;
-    padding: 0 80px;
+    padding: 0 8.0rem;
     align-items: center;
     justify-content: center;
     width: 100%;
     background-color: var(--white-color);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.5);
 }
 
 .header__container {
     display: flex;
     position: relative;
-    height: 80px;
+    height: 8.0rem;
     justify-content: space-between;
     align-items: center;
     font-size: 1.4rem;
     background-color: var(--white-color);
     width: 100%;
-    max-width: 1600px;
+    max-width: 160.0rem;
 }
 
 .header__logo {
-    width: 100px;
+    width: 10.0rem;
     height: auto;
     color: #ff385c;
-    flex: 1 0 140px;
+    flex: 1 0 14.0rem;
 }
 .header__search {
     display: flex;
     align-items: center;
-    border: 1px solid var(--button-border);
-    border-radius: 25px;
-    min-width: 300px;
-    height: 48px;
-    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 2px 2px, rgba(0, 0, 0, 0.01) 0px 0px 6px 2px;
+    border: .1rem solid var(--button-border);
+    border-radius: 2.5rem;
+    min-width: 30.0rem;
+    height: 4.8rem;
+    box-shadow: rgba(0, 0, 0, 0.03) .0rem .0rem .2rem .2rem, rgba(0, 0, 0, 0.01) .0rem .0rem .6rem .2rem;
     cursor: pointer;
 }
 
 .header__search:hover,
 .header__search:focus-within {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px,rgba(0, 0, 0, 0.08) 0px 0px 5px 2px;;
+    box-shadow: rgba(0, 0, 0, 0.2) .0rem .1rem .4rem,rgba(0, 0, 0, 0.08) .0rem .0rem .5rem .2rem;;
 }
 
 .search__input {
-    padding-left: 20px;
+    padding-left: 2.0rem;
     width: 100%;
     flex: 1;
 }
@@ -123,9 +135,9 @@ a {
 
 .search__icon {
     display: flex;
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: .8rem;
     border-radius: 50%;
     background-color: #ff385c;
     
@@ -143,46 +155,46 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex: 1 0 140px;
+    flex: 1 0 14.0rem;
 }
 .header__lang {
-    padding: 12px;
+    padding: 1.2rem;
 }
 .header__account {
     position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding-right: 4px;
+    padding-right: .4rem;
     padding-left: 0;
-    border: 1px solid var(--button-border);
-    margin-left: 4px;
+    border: .1rem solid var(--button-border);
+    margin-left: .4rem;
 }
 
 .header__account:hover {
     background-color: var(--white-color);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) .0rem .3rem .3rem .0rem;
 }
 
 .header__account .ti-menu {
-    padding: 0 14px;
+    padding: 0 1.4rem;
 }
 
 .header__account-icon {
     color: var(--gray-color);
-    width: 30px;
+    width: 3.0rem;
 }
 
 /* Footer */
 
 .footer {
-    padding: 36px 80px 0;
+    padding: 3.6rem 8.0rem 0;
     background-color: #f7f7f7;
-    border-top: 1px solid var(--button-border);
+    border-top: .1rem solid var(--button-border);
 }
 
 .footer__container {
-    max-width: 1600px;
+    max-width: 160.0rem;
     margin: auto;
 }
 
@@ -192,12 +204,12 @@ a {
 
 .footer ul {
     list-style: none;
-    padding: 0 0 36px;
+    padding: 0 0 3.6rem;
     margin: 0;
 }
 
 .footer li {
-    margin: 22px 0;
+    margin: 2.2rem 0;
     font-size: 1.4rem;
 }
 
@@ -211,16 +223,16 @@ a {
 .footer_ending {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
-    border-top: 1px solid var(--button-border);
+    padding: 2.4rem 0;
+    border-top: .1rem solid var(--button-border);
     font-size: 1.4rem;
 }
 
 .split-dot {
     display: inline-block;
-    width: 10px;
+    width: 1.0rem;
     text-align: center;
-    transform: translateY(-4px);
+    transform: translateY(-.4rem);
     font-weight: 700;
 }
 
@@ -234,14 +246,14 @@ a {
 }
 
 .footer__currency {
-    margin-left: 24px;
+    margin-left: 2.4rem;
 }
 
 .footer__social {
-    margin-left: 48px;
+    margin-left: 4.8rem;
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 12.0rem;
     font-size: 2rem;
 }
 
@@ -249,7 +261,9 @@ a {
     cursor: pointer;
 }
 
-
+.visible {
+    visibility: visible!important;
+}
 
 /* Modal */
 .modal {
@@ -265,61 +279,61 @@ a {
 }
 
 .account__menu {
+    visibility: hidden;
     list-style: none;
     position: absolute;
-    right: 152px;
-    top: 128px;
+    right: 0;
     color: var(--black-color);
     background-color: var(--white-color);
     font-size: 1.6rem;
-    width: 240px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    border-radius: 12px;
-    padding: 10px 0;
+    width: 24.0rem;
+    box-shadow: rgba(14, 30, 37, 0.12) .0rem .2rem .4rem .0rem, rgba(14, 30, 37, 0.32) .0rem .2rem 1.6rem .0rem;
+    border-radius: 1.2rem;
+    padding: 1.0rem 0;
 }
 
 .close-modal {
     display: none;
     position: absolute;
     content: "";
-    width: 78px;
-    height: 40px;
-    right: 152px;
+    width: 7.8rem;
+    height: 4.0rem;
+    right: 15.2rem;
     cursor: pointer;
     background: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.15) .0rem .3rem .3rem .0rem;
+    border-radius: 2.2rem;
 }
 
 .account__login {
-    margin: 0px ;
+    margin: .0rem ;
     padding: 0;
 }
 
 .account__login::after {
     content: "";
     display: block;
-    height: 8px;
-    border-bottom: 1px solid rgba(73, 73, 73, 0.3);
+    height: .8rem;
+    border-bottom: .1rem solid rgba(73, 73, 73, 0.3);
     cursor: default;
 }
 
 .account__other::before {
     content: "";
     display: block;
-    height: 8px;
+    height: .8rem;
     cursor: default;
 }
 
 .account__other {
-    margin: 0px 0;
+    margin: .0rem 0;
     padding: 0;
 }
 
 .account__menu li {
     display: block;
     list-style: none;
-    padding: 12px 16px;
+    padding: 1.2rem 1.6rem;
 }
 
 .account__menu li:hover {
@@ -333,7 +347,7 @@ a {
 /* Grid system */
 .grid {
     display: grid;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 .grid--3-rows {
@@ -354,12 +368,18 @@ a {
 
 /* Responsive */
 
+@media (min-width: 1111px) {
+    .content__container {
+        padding: 0 8rem;
+    }
+}
+
 @media (max-width: 1110px) {
     .header,
     .footer,
     .content__container {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 4.0rem;
+        padding-right: 4.0rem;
     }
 
     .footer__nav {
@@ -374,23 +394,23 @@ a {
     .footer__nav-item ul {
         display: flex;
         flex-wrap: wrap;
-        margin: 8px -12px;
-        padding-bottom: 12px;
+        margin: .8rem -1.2rem;
+        padding-bottom: 1.2rem;
     }
 
     .footer__nav-item::after {
         position: absolute;
         content: "";
-        bottom: 4px;
+        bottom: .4rem;
         width: 100%;
-        height: 1px;
+        height: .1rem;
         background-color: var(--button-border);
     }
 
     .footer__nav-item ul li {
         width: 33.33%;
-        padding: 0 12px;
-        margin: 8px 0;
+        padding: 0 1.2rem;
+        margin: .8rem 0;
     }
 }
 
@@ -403,8 +423,8 @@ a {
     .header,
     .footer,
     .content__container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 2.0rem;
+        padding-right: 2.0rem;
     }
 
     .grid {
@@ -420,7 +440,7 @@ a {
     }
 
     .ending-right {
-        margin-bottom: 8px;
+        margin-bottom: .8rem;
     }
 
     .footer__social {
@@ -429,6 +449,8 @@ a {
 
     .ending-left span:first-child {
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: .8rem;
     }
+
+   
 }
